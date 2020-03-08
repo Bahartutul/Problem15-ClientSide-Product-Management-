@@ -22,7 +22,7 @@
         <table>
             <thead>
                 <tr>
-                    <td>ProductId</td>
+                    
                     <td>ProductName</td>
                     <td>Category</td>
                     <td>Create Date</td>
@@ -31,7 +31,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let p of products | paginate: { itemsPerPage: 6, currentPage: p }">
-                    <td><input type="text" name="productId" #productId="ngModel" [(ngModel)]="p.productId"></td>
+                   
                     <td><input type="text" name="productName" #productName="ngModel" [(ngModel)]="p.productName"></td>
                     <td>
                         <select class="custom-select" #mySelect >
