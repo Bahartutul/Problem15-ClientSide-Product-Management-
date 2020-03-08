@@ -1,0 +1,16 @@
+
+<h1 mat-dialog-title>Add Category</h1>
+<div mat-dialog-content>
+  <div class="form-group row">
+  <input type="text" #inputText placeholder="Input Category Name">
+    
+  <button class="btn waves-effect waves-light" type="button" name="action" (click)="addCategory(inputText.value)">ADD
+    <i class="material-icons right">send</i>
+  </button>
+  <button type="button" class="btn btn-raised btn-danger" (click)="close()"><i class="fa fa-window-close">
+   
+    </i></button>
+</div>  
+</div>
+
+
